@@ -1,6 +1,6 @@
 # CP-SNIP README
 
-This is the README for your extension "pwj". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "CP-SNIP". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
