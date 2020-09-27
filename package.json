@@ -1,0 +1,35 @@
+{
+  "name": "CP-SNIPS",
+  "displayName": "CP-SNIPS",
+  "description": "Snipets for CP Community",
+  "version": "1.0.0",
+  "publisher": "Vinoth Krihsan Kathiresan",
+  "author":"Vinoth Krishan Kathiresan"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drKrishan/vidlyReactggg"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.49.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

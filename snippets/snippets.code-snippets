@@ -1,0 +1,85 @@
+{
+  "Component Intialization": {
+    "prefix": "com",
+    "body": [
+      "import React from 'react'",
+      "import \"../StyleSheets/${1:${TM_FILENAME_BASE}}.css\"",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "\treturn (",
+      "\t\t<div className=\"${TM_FILENAME_BASE/(^.)/${1:/downcase}$2/}\">",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}",
+      ""
+    ],
+    "description": "Created starting Component"
+  },
+
+  "StateProvider Invoking": {
+    "prefix": "spi",
+    "body": [
+      "import React, { createContext, useContext, useReducer } from \"react\";",
+      "",
+      "export const StateContext = createContext();",
+      "",
+      "export const StateProvider = ({ reducer, initialState, children }) => (",
+      "  <StateContext.Provider value={useReducer(reducer, initialState)}>",
+      "    {children}",
+      "  </StateContext.Provider>",
+      ");",
+      "",
+      "export const useStateValue = () => useContext(StateContext);",
+      ""
+    ],
+    "description": "State provider Creating"
+  },
+
+  "Reducer InWork": {
+    "prefix": "rdi",
+    "body": [
+      "",
+      "export const initialState = {",
+      "  term: null,",
+      "};",
+      "",
+      "export const actionTypes = {",
+      "  SAMPLE_TERM: \"SAMPLE_TERM\",",
+      "};",
+      "",
+      "const reducer = (state, action) => {",
+      "  console.log(action);",
+      "  switch (action.type) {",
+      "    case actionTypes.SAMPLE_TERM:",
+      "      return {",
+      "        ...state,",
+      "        term: action.term,",
+      "      };",
+      "",
+      "    default:",
+      "      return state;",
+      "  }",
+      "};",
+      "",
+      "export default reducer;",
+      "",
+      ""
+    ],
+    "description": "Reducer InWork"
+  },
+
+  "className additon": {
+    "prefix": "cn",
+    "body": ["className=\"${TM_FILENAME_BASE/(^.)/${1:/downcase}$2/}__\""],
+    "description": "className additon"
+  },
+
+  "class additon": {
+    "prefix": ".cn",
+    "body": [".${TM_FILENAME_BASE/(^.)/${1:/downcase}$2/}__{}"],
+    "description": "class additon"
+  }
+}
