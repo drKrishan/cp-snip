@@ -3,8 +3,10 @@
   "displayName": "CP-SNIPS",
   "description": "Snippets for CP Community",
   "version": "1.0.0",
-  "publisher": "Vinoth Krishan Kathiresan",
-  "author":"Vinoth Krishan Kathiresan",
+  "publisher": "vinothKrishanKathiresan",
+  "author":{
+  "name":"Vinoth Krishan Kathiresan"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/drKrishan/cp-snip"
